@@ -1,0 +1,17 @@
+@{
+    if (!string.IsNullOrEmpty(Name))
+    {
+        <Title Value=@GetTitle />
+    }
+    else
+    {
+        <Title Value=@AppConsts.APP_TITLE />
+    }
+}
+
+@code {
+    [Parameter]
+    public string Name { get; set; }
+
+    string GetTitle => $"{ Name } - { AppConsts.APP_TITLE }";
+}

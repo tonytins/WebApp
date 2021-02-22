@@ -26,6 +26,18 @@
       "problemMatcher": "$msCompile"
     },
     {
+      "label": "restore",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "restore",
+        "${workspaceFolder}/src/TonyBark.WebApp/TonyBark.WebApp.csproj",
+        "/property:GenerateFullPaths=true",
+        "/consoleloggerparameters:NoSummary"
+      ],
+      "problemMatcher": "$msCompile"
+    },
+    {
       "label": "watch",
       "command": "dotnet",
       "type": "process",
