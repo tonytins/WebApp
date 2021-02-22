@@ -16,11 +16,6 @@ jobs:
         run: dotnet restore src
       - name: Publish with dotnet
         run: dotnet publish src/TonyBark.WebApp -c Release --output build --no-restore
-      - name: Copy index.html as 404.html
-        uses: canastro/copy-file-action@master
-        with:
-          source: "build/wwwroot/index.html"
-          target: "build/wwwroot/404.html"
       - name: Deploy to Github Pages
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:

@@ -1,3 +1,5 @@
+root = true
+
 # Default settings:
 # A newline ending every file
 # Use 4 spaces as indentation

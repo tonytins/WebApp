@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace TonyBark.WebApp
+﻿namespace TonyBark.WebApp
 {
     public struct SiteConsts
     {
